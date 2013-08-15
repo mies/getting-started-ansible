@@ -4,4 +4,4 @@ build:
     - script:
         name: install ntp
         code: |
-          sudo ansible-playbook -v site.yml -i inventory.ini hosts -k --local-connection
+          sudo ansible-playbook -v site.yml -i inventory.ini hosts -k -c local
