@@ -4,4 +4,4 @@ build:
     - script:
         name: install ntp
         code: |
-          sudo ansible-playbook -v site.yml -i hosts -k
+          sudo ansible-playbook -v site.yml hosts -k
