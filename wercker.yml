@@ -6,3 +6,10 @@ build:
         code: |
             sudo pip install python-apt
             sudo ansible-playbook -v site.yml -i inventory.ini -c local
+  after-steps:
+      - mies/email-notify:
+          from: alerts@wercker.com
+          to: mies@wercker.com
+          username: $USER
+          password: $PASS
+          host: smtp.gmail.com:587
