@@ -5,4 +5,4 @@ build:
         name: install ntp
         code: |
           # sudo ansible-playbook -v site.yml -i inventory.ini hosts -k -c local --ask-sudo-pass
-          ansible all -m ping --ask-pass
+          ansible all -m ping --ask-pass -i inventory.ini
