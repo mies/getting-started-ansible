@@ -1,0 +1,7 @@
+box: wouter/ubuntu12.04-ansbile@0.0.1
+build:
+  steps:
+    - script
+        name: install ntp
+        code: |
+          sudo ansible-playbook -v site.yml -i hosts -k   
