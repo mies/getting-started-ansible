@@ -1,10 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-    - name: ensure ntpd is at the latest version
-      apt: pkg=ntp state=latest
-      notify:
-      - restart ntpd
-  handlers:
-    - name: restart ntpd
-      service: name=ntpd state=restarted
+    - name: ensure vim is at the latest version
+      apt: pkg=vim state=latest
