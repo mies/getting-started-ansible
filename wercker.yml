@@ -1,4 +1,4 @@
-box: wouter/ubuntu12.04-ansbile
+box: wouter/ubuntu12.04-ansible
 build:
   steps:
     - script:
